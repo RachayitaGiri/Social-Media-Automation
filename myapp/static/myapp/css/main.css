@@ -2751,26 +2751,26 @@
 	}
 
 		.subpage #header {
-			background: #6cc091;
-			top: 0;
-			height: 44px;
-			line-height: 44px;
-			position: fixed;
-		}
+    background: #e9e9e9;
+    top: 0;
+    height: 44px;
+    line-height: 44px;
+    position: fixed;
+}
 
-	#header {
-		color: #fff;
-		cursor: default;
-		height: 3.25em;
-		left: 0;
-		line-height: 3.25em;
-		position: absolute;
-		text-align: right;
-		top: 2em;
-		width: 100%;
-		z-index: 10001;
-	}
-
+#header {
+    font-weight: bold;
+    color: #897b7b;
+    cursor: default;
+    height: 3.25em;
+    left: 0;
+    line-height: 3.25em;
+    position: absolute;
+    text-align: right;
+    top: 2em;
+    width: 100%;
+    z-index: 10001;
+}
 		#header .inner {
 			margin: 0 auto;
 			position: relative;

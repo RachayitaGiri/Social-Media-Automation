@@ -1,4 +1,9 @@
 from django.shortcuts import render
+from pymongo import MongoClient
+from datetime import datetime
+
+connection=MongoClient()
+db=connection['test']
 
 def home(request):
 	return render(request,'myapp/home.html')
@@ -7,12 +12,19 @@ def view_notifications(request):
 	return render(request,'myapp/view_notifications.html')
 
 def twitter(request):
-	return render(request,'myapp/twitter.html')
+	results = db.newtweets.find().sort([("id", -1)])
+	results = list(results)
+	for result in results:
+		print result
+
+	return render(request,'myapp/twitter.html', {'results': results})
+
 
 # def facebook(request):
 # 	return render(request,'myapp/facebook.html')
 
 def branches(request):
+
 	return render(request,'myapp/branches.html')
 
 
