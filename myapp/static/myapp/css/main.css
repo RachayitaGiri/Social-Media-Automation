@@ -7,6 +7,20 @@
 	templated.co @templatedco
 	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
 */
+		/*EXTRA*/
+		
+		input#srch-term {
+    color: black;
+    border: solid 2px #9eb3b6;
+    box-shadow: inset 0 0 0 3px #ffffff;
+    box-shadow: 0;
+	border-radius: 25px;
+
+}
+
+.logo {
+    text-align: -WEBKIT-CENTER;
+}
 
 /* Reset */
 
@@ -1811,7 +1825,7 @@
 	}
 
 	.inner {
-		max-width: 75em;
+		max-width: 86em;
 		margin: 0 auto;
 	}
 
@@ -1986,7 +2000,7 @@
 
 			form .field.half {
 				display: inline-block;
-				width: 48%;
+			
 			}
 
 				form .field.half.first {
@@ -2013,6 +2027,22 @@
 		font-weight: 600;
 		margin: 0 0 1em 0;
 	}
+	select {
+	-moz-appearance: none;
+		-webkit-appearance: none;
+		-ms-appearance: none;
+		appearance: none;
+		background: #fff;
+		border-radius: 10px;
+		border: none;
+		border: solid 1px #7adae6; 
+		color: #fff;
+		display: block;
+		outline: 0;
+		padding: 0 1em;
+		text-decoration: none;
+		width: 100%;
+}
 
 	input[type="text"],
 	input[type="password"],
@@ -2024,17 +2054,19 @@
 		-webkit-appearance: none;
 		-ms-appearance: none;
 		appearance: none;
-		background: #6cc091;
+		background: #ffffff;
 		border-radius: 10px;
 		border: none;
-		border: solid 2px #8dcca9;
-		color: #fff;
+		border: solid 1px #7adae6; 
+		color: #242222;
 		display: block;
 		outline: 0;
 		padding: 0 1em;
 		text-decoration: none;
 		width: 100%;
 	}
+
+
 
 		input[type="text"]:invalid,
 		input[type="password"]:invalid,
@@ -2051,8 +2083,8 @@
 		input[type="tel"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: #4bae77;
-			box-shadow: 0 0 0 1px #4bae77;
+			border-color: #6cc1cb;
+			box-shadow: 0 0 0 1px #6cc1cb;
 		}
 
 	.select-wrapper {
@@ -2175,27 +2207,27 @@
 	}
 
 	::-webkit-input-placeholder {
-		color: #c4e5d3 !important;
+		color: #c3c3c3 !important;
 		opacity: 1.0;
 	}
 
 	:-moz-placeholder {
-		color: #c4e5d3 !important;
+		color: #c3c3c3 !important;
 		opacity: 1.0;
 	}
 
 	::-moz-placeholder {
-		color: #c4e5d3 !important;
+		color: #c3c3c3 !important;
 		opacity: 1.0;
 	}
 
 	:-ms-input-placeholder {
-		color: #c4e5d3 !important;
+		color: #c3c3c3 !important;
 		opacity: 1.0;
 	}
 
 	.formerize-placeholder {
-		color: #c4e5d3 !important;
+		color: #c3c3c3 !important;
 		opacity: 1.0;
 	}
 
@@ -2580,18 +2612,18 @@
 		-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		background-color: transparent;
-		box-shadow: inset 0 0 0 3px #6cc091;
-		color: #6cc091 !important;
+		box-shadow:inset 0 0 0 3px #69d2df;
+		color:#ffffff !important;
 		border-radius: 30px;
 		border: 0;
 		cursor: pointer;
 		display: inline-block;
-		font-size: .75em;
-		font-weight: 400;
-		height: 3.75em;
+		font-size: .8em;
+		font-weight: 500;
+		height: 4em;
 		line-height: 3.85em;
-		letter-spacing: 2px;
-		padding: 0 4em;
+		letter-spacing: 1px;
+		padding: 0 2em;
 		text-align: center;
 		text-decoration: none;
 		text-transform: uppercase;
@@ -2603,15 +2635,7 @@
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			background-color: rgba(108, 192, 145, 0.15);
-		}
-
-		input[type="submit"]:active,
-		input[type="reset"]:active,
-		input[type="button"]:active,
-		button:active,
-		.button:active {
-			background-color: rgba(108, 192, 145, 0.15);
+			background-color: rgba(0, 146, 255, 0.62);
 		}
 
 		input[type="submit"].icon,
@@ -2695,8 +2719,8 @@
 		input[type="button"].special,
 		button.special,
 		.button.special {
-			background-color: #6cc091;
-			color: #ffffff !important;
+			background-color: £fff;
+			color: #000 !important;
 		}
 
 			input[type="submit"].special:hover,
@@ -2704,7 +2728,7 @@
 			input[type="button"].special:hover,
 			button.special:hover,
 			.button.special:hover {
-				background-color: #7ec89e;
+				background-color: rgba(247, 253, 254, 0.61);
 			}
 
 			input[type="submit"].special:active,
@@ -2712,7 +2736,7 @@
 			input[type="button"].special:active,
 			button.special:active,
 			.button.special:active {
-				background-color: #5ab884;
+				background-color: rgba(247, 253, 254, 0.61);
 			}
 
 		input[type="submit"].disabled, input[type="submit"]:disabled,
@@ -2751,6 +2775,7 @@
 	}
 
 		.subpage #header {
+			padding: 4px;
     background: #e9e9e9;
     top: 0;
     height: 44px;
@@ -2808,7 +2833,7 @@
 		}
 
 			#header a:hover {
-				color: #ffffff;
+				color: #2ac5cc;
 			}
 
 			#header a:last-child {
@@ -2890,7 +2915,7 @@
 		visibility: hidden;
 		overflow-y: auto;
 		position: fixed;
-		right: 0;
+		left: 0;
 		top: 0;
 		background: #6cc091;
 		color: #daefe3;
@@ -2968,7 +2993,7 @@
 			}
 
 			.button1{
-				background-color: #e7e7e7; color: black;
+				background-color: #7adae6; color: white;
 			}
 
 /* Banner */
@@ -3215,3 +3240,4 @@
 			}
 
 		}
+

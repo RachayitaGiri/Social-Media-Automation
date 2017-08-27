@@ -7,7 +7,25 @@
 
 <html>
 <style type="text/css">
+nav#nav, #header {
+    text-align: initial;
+}
+#header { text-align: left !important; }
+#navPanel { left: 0; }
 
+.col-sm-3.col-md-3.pull-right {
+    padding-top: 5px !important;
+}
+
+td.datecol {
+    width: 8%;
+}
+td.dptcol {
+    width: 17%;
+}
+td.respcol {
+    width: 28%;
+}
 </style>
 	<head>
 		<title>Twitter</title>
@@ -22,7 +40,7 @@
 			<header id="header">
 				<div class="inner">
 				
-				     <div class="col-sm-3 col-md-3 pull-left">
+				     <div class="col-sm-3 col-md-3 pull-right">
         <form class="navbar-form" role="search">
         <div class="input-group">
             <input type="text" class="button special icon fa-search" placeholder="Search" name="srch-term" id="srch-term">
@@ -72,16 +90,16 @@
 											<tbody>
 											{% for result in results %}
 												<tr>
-													<td> {{ result.date }}</td>
-													<td>{{result.time}}</td>
-													<td>{%if result.extended_tweet.full_text %}
+													<td class="datecol"> {{ result.date }}</td>
+													<td class="timecol">{{result.time}}</td>
+													<td class="tweetcol">{%if result.extended_tweet.full_text %}
 															{{result.extended_tweet.full_text}}
 														{%else%}
 															{{result.text   }}
 				
 														{%endif%}
 														</td>
-   									 		       <td>
+   									 		       <td class="dptcol">
    									 		       <div class="12u$">
    									 		       <div id="drop" >
 												<div class="select-wrapper">
@@ -92,7 +110,9 @@
             											<option value="prosecution">Prosecution/Notice Branch</option>
             											<option value="civic">Civic</option>
             											<option value="piu">PIU</option>
-            											<option value="dcp">DCP ranges/ACP district/DCP district</option>
+            											<option value="dcp">DCP ranges</option>
+													    <option value="dcp]"> ACP district/DCP district</option>
+
 													</select>
 												</div>
 												</div>
@@ -116,7 +136,7 @@
 
 											</div>
 											</td>
-													<td>
+													<td class="respcol">
 														<!-- <form method="post" action="#">
 												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Write a response" /> -->
 												<form action="#" method="post">
